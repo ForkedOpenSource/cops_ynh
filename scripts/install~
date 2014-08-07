@@ -10,8 +10,6 @@ if [[ ! $? -eq 0 ]]; then
   exit 1
 fi
 
-sudo apt-get install php5-gd php5-sqlite
-
 # Remove trailing "/" for next commands
 path=${path%/}
 
