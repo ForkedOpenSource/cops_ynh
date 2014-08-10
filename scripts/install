@@ -36,4 +36,9 @@ sudo service nginx reload
 
 # Configure COPS
 sudo cp ../conf/config_local.php $final_path/config_local.php
-sudo sed -i "s@DATAPATH@$data_path@g" final_path/config_local.php
+sudo sed -i "s@DATAPATH@$data_path@g" $final_path/config_local.php
+
+# Configure PAM
+sudo cp ../conf/nginx.pam /etc/pam.d/nginx
+sudo chmod 644 /etc/pam.d/nginx
+sudo chown root:root /etc/pam.d/nginx
