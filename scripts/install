@@ -10,7 +10,7 @@ if [[ ! $? -eq 0 ]]; then
   exit 1
 fi
 
-sudo apt-get install php5-gd php5-sqlite
+sudo apt-get install php5-gd php5-sqlite -y
 
 # Copy of sources files
 final_path=/var/www/cops
