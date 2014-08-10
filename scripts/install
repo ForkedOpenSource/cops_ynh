@@ -35,5 +35,5 @@ sudo cp ../conf/nginx.conf /etc/nginx/conf.d/$domain.d/jeedom.conf
 sudo service nginx reload
 
 # Configure COPS
-sudo cp $final_path/config_local.php.example $final_path/config_local.php
+sudo cp ../conf/config_local.php $final_path/config_local.php
 sudo sed -i "s@DATAPATH@$data_path@g" final_path/config_local.php
